@@ -31,6 +31,7 @@ Gere um banco de dados simulado de vendas de um e-commerce e realize análises p
 from faker import Faker
 import pandas as pd
 import numpy as np
+import uuid
 import random
 import matplotlib.pyplot as plt
 from datetime import datetime
@@ -79,11 +80,14 @@ def generateSalesData (numRows, customerInfo, categoriesList):
     df = pd.DataFrame({'category': np.random.choice(list(categoriesList.keys()),numRows),
                    '%_discount': np.round(np.random.uniform(0, 10,numRows),1),
                    'unit_price': np.round(np.random.uniform(25, 600,numRows),2),
-                   'sales_code':np.random.randint(100001, 999999, numRows).astype(str),
+                   #'sales_code':np.random.randint(100001, 999999, numRows).astype(str),
                    'sales_quantity': np.random.randint(1,14,numRows),
                    'sales_date':  pd.to_datetime(datetime(2024, 1, 1) + pd.to_timedelta(np.random.randint(0, 365, numRows), unit='D')),
                    'customer': np.random.choice(list(customerInfo['customersIds'].keys()),numRows),
                    })
+    # Gera um código único de venda para cada registro, utilizando os primeiros 8 caracteres de um UUID aleatório.
+    # Isso garante que cada venda tenha um identificador único, reduzindo a chance de duplicação.
+    df['sales_code'] = [str(uuid.uuid4())[:8] for _ in range(len(df))]
     df["customer_id"] = df["customer"].map(customerInfo['customersIds']).astype(str)
     df['city'] = df['customer'].map(customerInfo['customersCities'])
     df['email'] = df['customer'].map(customerInfo['customersEmails'])
