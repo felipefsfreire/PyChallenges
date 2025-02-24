@@ -33,6 +33,7 @@ import pandas as pd
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+from datetime import datetime
 import sqlite3
 
 fake = Faker('pt_BR') # Inicializa o Faker com dados fictícios em português do Brasil
