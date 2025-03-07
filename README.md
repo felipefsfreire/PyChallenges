@@ -1,67 +1,41 @@
 # 📊 Desafios de Geração e Análise de Dados com Python
 
-Bem-vindo(a) ao repositório **Desafios de Geração e Análise de Dados com Python**!  
-Aqui você encontrará exercícios práticos para aprimorar suas habilidades em **Python, Pandas, NumPy, Faker, Matplotlib** e **análise de dados**.
+Bem-vindo(a) ao repositório **Desafios de Geração e Análise de Dados com Python**!
+Aqui você encontrará exercícios práticos para aprimorar suas habilidades em **Python** e bibliotecas para manipulação, visualização e análise de dados.
 
-## Sobre os desafios  
+## Sobre os desafios
 
-Este repositório contém desafios voltados para a geração e análise de dados fictícios.  
-Cada exercício propõe a criação de conjuntos de dados sintéticos e a realização de análises úteis, como:
+Este repositório contém desafios voltados para a geração e análise de dados sintéticos. Cada exercício propõe a criação de conjuntos de dados e a exploração de informações de forma estruturada.
 
-✔ **Geração de dados aleatórios** com Faker e NumPy  
-✔ **Manipulação de DataFrames** com Pandas  
-✔ **Visualização de dados** com Matplotlib  
-✔ **Análise estatística** de vendas e clientes  
-✔ **Classificação de clientes VIP**  
+### Desafios disponíveis
 
-Atualmente, os desafios disponíveis são:
+- **_[Geração de Dados de Vendas de uma Livraria](challenges/1desafioLivraria.ipynb)_**
+- **_[Análise de Clientes VIP em um E-commerce](challenges/2desafioEcommerce.ipynb)_**
+- **_[Relatórios Avançados e Dashboard de Vendas](challenges/3desafioEcommerce.ipynb)_**
 
-### 1️⃣ [Geração de Dados de Vendas de uma Livraria](challenges/1desafioLivraria.ipynb)
+Novos desafios serão adicionados conforme o repositório for evoluindo! 
 
-✅ Criar um DataFrame simulando vendas de livros, incluindo nomes de clientes e preços.  
-✅ Identificar os **10 livros mais vendidos** e criar um gráfico.  
-✅ Adicionar colunas para **desconto e preço final da compra**.  
-
-### 2️⃣ [Análise de Clientes VIP em um E-commerce](challenges/2desafioEcommerce.ipynb)
-
-✅ Criar um **banco de dados fictício** de vendas de um e-commerce.  
-✅ Identificar **clientes VIP** (aqueles que gastaram acima de **R$ 5.000**).  
-✅ Criar um **gráfico de faturamento mensal**.  
-✅ Classificar os **5 clientes que mais gastaram**.  
-
-## Como executar os desafios?  
+## Como executar os desafios?
 
 1. **Clone o repositório:**  
-
    ```bash
    git clone https://github.com/seu-usuario/desafios-analise-dados.git
    ```
 
-2. **Instale as dependências (se ainda não tiver instalado):**  
-
+2. **Instale as dependências:**  
    ```bash
-   pip install pandas numpy faker matplotlib
+   pip install -r requirements.txt
    ```
 
-3. **Execute o script do desafio desejado:**  
+3. **Execute o desafio desejado no Jupyter Notebook ou diretamente no Python:**  
 
-   ```bash
-   python 1desafioLivraria.ipynb
-   ```
-
-   ou  
-
-   ```bash
-   python 2desafioEcommerce.ipynb
-   ```
-
-## Contribuições  
+## Contribuições
 
 Se quiser contribuir, fique à vontade para enviar **pull requests** com novos desafios ou melhorias nos códigos existentes!
 
 Caso tenha **dúvidas ou sugestões**, abra uma **issue** ou me chame diretamente!
 
-Se gostou, não esqueça de dar uma ⭐ no repositório!  
+Se gostou, não esqueça de dar uma ⭐ no repositório!
 
 ## 📑 Documentação
 
@@ -72,3 +46,4 @@ Para mais informações sobre as tecnologias utilizadas, confira a documentaçã
 - [NumPy](https://numpy.org/doc/)
 - [Faker](https://faker.readthedocs.io/en/master/)
 - [Matplotlib](https://matplotlib.org/stable/contents.html)
+- [Streamlit](https://streamlit.io/)
